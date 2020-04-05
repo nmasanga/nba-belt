@@ -64,7 +64,7 @@ def soup(game_date=None, df=None, winning_team=str):
 
     columns = ['date','Winner', 'Winner_Score', 'Loser', 'Loser_Score', 'box_score']
     df = df[columns] # reorder columns
-    df = df.set_index('date') # set index to date
+    # df = df.set_index('date') # set index to date
     return(df)
 
 
@@ -89,11 +89,11 @@ def update():
 def write_html(df=None):
     print('Writing HTML file.')
     html = df.to_html()
-    html_file= open("game_data.html","w")
+    html_file= open("/data/game_data.html","w")
     html_file.write(html)
     html_file.close()
 
-if path.exists("scores.csv") == True:
+if path.exists("/data/scores.csv") == True:
     print("Updating existing CSV")
     df = update()
 else:
@@ -104,7 +104,7 @@ else:
 write_html(df)
 
 ##write CSV file
-df.to_csv(r'scores.csv')
+df.to_csv(r'/data/scores.csv')
 
 ## find current belt holder
 belt_holder = df['Winner'][0]

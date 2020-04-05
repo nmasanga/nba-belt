@@ -1,0 +1,66 @@
+,date,Winner,Winner_Score,Loser,Loser_Score,box_score
+0,2020-3-10,Boston,114,Indiana,111,https://www.basketball-reference.com/boxscores/202003100IND.html
+1,2020-3-8,Indiana,112,Dallas,109,https://www.basketball-reference.com/boxscores/202003080DAL.html
+2,2020-3-6,Dallas,121,Memphis,96,https://www.basketball-reference.com/boxscores/202003060DAL.html
+3,2020-3-4,Memphis,118,Brooklyn,79,https://www.basketball-reference.com/boxscores/202003040BRK.html
+4,2020-3-2,Memphis,127,Atlanta,88,https://www.basketball-reference.com/boxscores/202003020ATL.html
+5,2020-2-29,Memphis,105,LA Lakers,88,https://www.basketball-reference.com/boxscores/202002290MEM.html
+6,2020-2-27,LA Lakers,116,Golden State,86,https://www.basketball-reference.com/boxscores/202002270GSW.html
+7,2020-2-25,LA Lakers,118,New Orleans,109,https://www.basketball-reference.com/boxscores/202002250LAL.html
+8,2020-2-23,LA Lakers,114,Boston,112,https://www.basketball-reference.com/boxscores/202002230LAL.html
+9,2020-2-21,LA Lakers,117,Memphis,105,https://www.basketball-reference.com/boxscores/202002210LAL.html
+10,2020-2-12,LA Lakers,120,Denver,116,https://www.basketball-reference.com/boxscores/202002120DEN.html
+11,2020-2-10,Denver,127,San Antonio,120,https://www.basketball-reference.com/boxscores/202002100DEN.html
+12,2020-2-8,Denver,117,Phoenix,108,https://www.basketball-reference.com/boxscores/202002080PHO.html
+13,2020-2-7,Phoenix,127,Houston,91,https://www.basketball-reference.com/boxscores/202002070PHO.html
+14,2020-2-6,Houston,121,LA Lakers,111,https://www.basketball-reference.com/boxscores/202002060LAL.html
+15,2020-2-4,Houston,125,Charlotte,110,https://www.basketball-reference.com/boxscores/202002040HOU.html
+16,2020-2-2,Houston,117,New Orleans,109,https://www.basketball-reference.com/boxscores/202002020HOU.html
+17,2020-1-31,New Orleans,139,Memphis,111,https://www.basketball-reference.com/boxscores/202001310NOP.html
+18,2020-1-29,Memphis,127,New York,106,https://www.basketball-reference.com/boxscores/202001290NYK.html
+19,2020-1-28,Memphis,104,Denver,96,https://www.basketball-reference.com/boxscores/202001280MEM.html
+20,2020-1-26,Memphis,114,Phoenix,109,https://www.basketball-reference.com/boxscores/202001260MEM.html
+21,2020-1-24,Phoenix,103,San Antonio,99,https://www.basketball-reference.com/boxscores/202001240SAS.html
+22,2020-1-22,San Antonio,121,New Orleans,117,https://www.basketball-reference.com/boxscores/202001220NOP.html
+23,2020-1-20,New Orleans,126,Memphis,116,https://www.basketball-reference.com/boxscores/202001200MEM.html
+24,2020-1-17,Memphis,113,Cleveland,109,https://www.basketball-reference.com/boxscores/202001170MEM.html
+25,2020-1-14,Memphis,121,Houston,110,https://www.basketball-reference.com/boxscores/202001140MEM.html
+26,2020-1-12,Memphis,122,Golden State,102,https://www.basketball-reference.com/boxscores/202001120MEM.html
+27,2020-1-10,Memphis,134,San Antonio,121,https://www.basketball-reference.com/boxscores/202001100MEM.html
+28,2020-1-8,San Antonio,129,Boston,114,https://www.basketball-reference.com/boxscores/202001080BOS.html
+29,2020-1-6,San Antonio,126,Milwaukee,104,https://www.basketball-reference.com/boxscores/202001060SAS.html
+30,2020-1-4,Milwaukee,127,San Antonio,118,https://www.basketball-reference.com/boxscores/202001040MIL.html
+31,2020-1-1,Milwaukee,106,Minnesota,104,https://www.basketball-reference.com/boxscores/202001010MIL.html
+32,2019-12-30,Milwaukee,123,Chicago,102,https://www.basketball-reference.com/boxscores/201912300CHI.html
+33,2019-12-28,Milwaukee,111,Orlando,100,https://www.basketball-reference.com/boxscores/201912280MIL.html
+34,2019-12-27,Orlando,98,Philadelphia,97,https://www.basketball-reference.com/boxscores/201912270ORL.html
+35,2019-12-25,Philadelphia,121,Milwaukee,109,https://www.basketball-reference.com/boxscores/201912250PHI.html
+36,2019-12-22,Milwaukee,117,Indiana,89,https://www.basketball-reference.com/boxscores/201912220MIL.html
+37,2019-12-20,Indiana,119,Sacramento,105,https://www.basketball-reference.com/boxscores/201912200IND.html
+38,2019-12-17,Indiana,105,LA Lakers,102,https://www.basketball-reference.com/boxscores/201912170IND.html
+39,2019-12-15,Indiana,107,Charlotte,85,https://www.basketball-reference.com/boxscores/201912150IND.html
+40,2019-12-13,Indiana,110,Atlanta,100,https://www.basketball-reference.com/boxscores/201912130ATL.html
+41,2019-12-11,Indiana,122,Boston,117,https://www.basketball-reference.com/boxscores/201912110IND.html
+42,2019-12-9,Boston,110,Cleveland,88,https://www.basketball-reference.com/boxscores/201912090BOS.html
+43,2019-12-6,Boston,108,Denver,95,https://www.basketball-reference.com/boxscores/201912060BOS.html
+44,2019-12-4,Boston,112,Miami,93,https://www.basketball-reference.com/boxscores/201912040BOS.html
+45,2019-12-3,Miami,121,Toronto,110,https://www.basketball-reference.com/boxscores/201912030TOR.html
+46,2019-12-1,Miami,109,Brooklyn,106,https://www.basketball-reference.com/boxscores/201912010BRK.html
+47,2019-11-29,Brooklyn,112,Boston,107,https://www.basketball-reference.com/boxscores/201911290BRK.html
+48,2019-11-27,Boston,121,Brooklyn,110,https://www.basketball-reference.com/boxscores/201911270BOS.html
+49,2019-11-25,Brooklyn,108,Cleveland,106,https://www.basketball-reference.com/boxscores/201911250CLE.html
+50,2019-11-24,Brooklyn,103,New York,101,https://www.basketball-reference.com/boxscores/201911240NYK.html
+51,2019-11-22,Brooklyn,116,Sacramento,97,https://www.basketball-reference.com/boxscores/201911220BRK.html
+52,2019-11-19,Sacramento,120,Phoenix,116,https://www.basketball-reference.com/boxscores/201911190SAC.html
+53,2019-11-17,Sacramento,100,Boston,99,https://www.basketball-reference.com/boxscores/201911170SAC.html
+54,2019-11-15,Boston,105,Golden State,100,https://www.basketball-reference.com/boxscores/201911150GSW.html
+55,2019-11-13,Boston,140,Washington,133,https://www.basketball-reference.com/boxscores/201911130BOS.html
+56,2019-11-11,Boston,116,Dallas,106,https://www.basketball-reference.com/boxscores/201911110BOS.html
+57,2019-11-9,Boston,135,San Antonio,115,https://www.basketball-reference.com/boxscores/201911090SAS.html
+58,2019-11-7,Boston,108,Charlotte,87,https://www.basketball-reference.com/boxscores/201911070CHO.html
+59,2019-11-5,Boston,119,Cleveland,113,https://www.basketball-reference.com/boxscores/201911050CLE.html
+60,2019-11-1,Boston,104,New York,102,https://www.basketball-reference.com/boxscores/201911010BOS.html
+61,2019-10-30,Boston,116,Milwaukee,105,https://www.basketball-reference.com/boxscores/201910300BOS.html
+62,2019-10-26,Boston,118,New York,95,https://www.basketball-reference.com/boxscores/201910260NYK.html
+63,2019-10-25,Boston,112,Toronto,106,https://www.basketball-reference.com/boxscores/201910250BOS.html
+64,2019-10-22,Toronto,130,New Orleans,122,https://www.basketball-reference.com/boxscores/201910220TOR.html
