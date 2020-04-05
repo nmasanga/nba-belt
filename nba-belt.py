@@ -76,7 +76,7 @@ def backfill():
     return(df)
 
 def update():
-    df = pd.read_csv("scores.csv")
+    df = pd.read_csv("data/scores.csv")
     max_date = df['date'][0]
     max_date = datetime.datetime.strptime(max_date, "%Y-%m-%d")
     max_date = max_date + timedelta(days=1)
@@ -89,11 +89,11 @@ def update():
 def write_html(df=None):
     print('Writing HTML file.')
     html = df.to_html()
-    html_file= open("/data/game_data.html","w")
+    html_file= open("data/game_data.html","w")
     html_file.write(html)
     html_file.close()
 
-if path.exists("/data/scores.csv") == True:
+if path.exists("data/scores.csv") == True:
     print("Updating existing CSV")
     df = update()
 else:
@@ -101,10 +101,10 @@ else:
     df = backfill()
 
 
-write_html(df)
+# write_html(df)
 
 ##write CSV file
-df.to_csv(r'/data/scores.csv')
+df.to_csv(r'data/scores.csv')
 
 ## find current belt holder
 belt_holder = df['Winner'][0]
