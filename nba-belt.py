@@ -16,6 +16,14 @@ last_game = datetime.datetime.strptime('2020-04-15', "%Y-%m-%d")
 winning_team = 'Toronto'
 pd.options.display.max_colwidth = 100
 
+
+def convert_link(str):
+    soup = BeautifulSoup('',"html.parser")
+    new_link = soup.new_tag('a', href=str, target='_blank')
+    new_link.string="Link"
+    return(new_link)
+
+
 ## web scraping
 def soup(game_date=None, df=None, winning_team=str):
     while game_date < datetime.datetime.now() and datetime.datetime.now() <= last_game:
@@ -49,7 +57,8 @@ def soup(game_date=None, df=None, winning_team=str):
                 box_score_td = champ_score.find('td', {'class':['gamelink']}) ## find the box score link
                 href = box_score_td.find('a')['href'] ## get the href from the anchor tag
                 box_score_url = 'https://www.basketball-reference.com' + href
-                # anchor_tag = href='https://www.basketball-reference.com" + href + "'>" + 'Link</a>'
+                box_score_url = convert_link(box_score_url)
+                # box_score_url ='<a href="https://www.basketball-reference.com' + href + '">' + 'Link</a>'
 
 
                 data.insert(0, {'Date': date_str,
@@ -90,7 +99,7 @@ def update():
 
 def write_html(df=None):
     print('Writing HTML file.')
-    html = df.to_html()
+    html = df.to_html(escape=False)
     html_file= open("data/game_data.html","w")
     html_file.write(html)
     html_file.close()
