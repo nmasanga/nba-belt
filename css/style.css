@@ -1,0 +1,35 @@
+html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+.body-class {
+  background-color: #527356;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title_page {
+  min-height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game_data {
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.champion {
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
