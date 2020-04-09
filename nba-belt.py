@@ -99,7 +99,7 @@ def update():
 
 def write_html(df=None):
     print('Writing HTML file.')
-    html = df.to_html(escape=False)
+    html = df.to_html(escape=False, index=False)
     html_file= open("data/game_data.html","w")
     html_file.write(html)
     html_file.close()
