@@ -13,11 +13,12 @@ h1 {
 }
 
 .title_page {
-  min-height: 75%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .game_data_style {
   min-height: 50%;
@@ -25,9 +26,15 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fff !important;
   padding: 0px;
   margin: 0px;
+}
+
+.container .game_data_style {
+  background-color: #fff !important
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .champion {
@@ -46,10 +53,15 @@ h1 {
   padding-right: 15px;
   margin: 0;
   color: black;
+  font-size: 80%;
+}
+
+.game_data_style h1 {
+  color: #527356 !important;
 }
 
 tbody tr td:nth-child(1) {
-  width: 360px;
+  width: 200px;
   /* padding-left: 40px; */
 }
 
@@ -58,11 +70,15 @@ tbody tr td:nth-child(2) {
 }
 
 tbody tr td:nth-child(3) {
-  width: 250px;
+  width: 160px;
 }
 
 tbody tr td:nth-child(4) {
-  width: 190px;
+  width: 160px;
+}
+
+tbody tr td:nth-child(5) {
+  width: 130px;
 }
 
 table {
@@ -73,4 +89,41 @@ table {
 
 th {
   text-align: left !important;
+}
+
+
+.arrow{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
