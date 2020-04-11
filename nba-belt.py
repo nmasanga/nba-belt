@@ -119,7 +119,7 @@ def write_winner(df=None):
 
     soup = BeautifulSoup('',"html.parser")
 
-    src = 'logos/' + belt_holder + '.png'
+    src = 'http://nbabelt.com/logos/' + belt_holder + '.png'
     img_tag = soup.new_tag('img', src=src)
 
     with open("data/belt_holder_logo.html", "w") as file:
