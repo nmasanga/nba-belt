@@ -14,7 +14,7 @@
   <body class="body-class">
 
     <div class="title_page">
-      <h1> nba champion belt</h1>
+      <h1> nba championship belt</h1>
       <div class="arrow">
                 <span></span>
                 <span></span>
@@ -23,8 +23,35 @@
     </div>
 
     <div class="champion">
-      <h1>Current champion:</h1>
+      <h1>current belt holder:</h1>
+      <!-- <div class="test-image">
+        <img src ="logos/utah.png"/>
+      </div> -->
+      <div id="belt_holder_logo"></div>
       <div id="current_holder"></div>
+    </div>
+
+    <div class ="concept">
+      <h1>concept</h1>
+      <div class="description">
+        <p>
+          The reigning champion starts the regular season holding the belt (in this case: the Toronto Raptors,
+          WHAT IT DO BABY). When the belt holder loses, they hand the belt to the team that beat them.
+          The team to hold it at the end of the regular season has the distinction of being
+          the season's belt champion.
+        </p>
+        <p>
+          When a new NBA champion is crowned, they start the next season with the belt and the process is repeated.
+        </p>
+        <p>
+          This is similar to how the WWE or any fighting organization hands belts.
+        </p>
+        <p>
+          Like many great ideas, this was stolen. Someone from the
+          <a href="https://www.reddit.com/r/nba" target="_blank">r/nba subreddit</a>
+          first incepted this concept and unfortunately I don't know their reddit username.
+        </p>
+      </div>
     </div>
 
 
@@ -33,16 +60,20 @@
       <div id="game_data"></div>
     </div>
 
+    <footer> created by:<a href='https://www.linkedin.com/in/norman-masanga' target="_blank"><ul>norman masanga</ul></a>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script>
     $(function(){
       $("#current_holder").load("data/current_holder.txt");
       $("#game_data").load("data/game_data.html");
+      $("#belt_holder_logo").load("data/belt_holder_logo.html");
     });
     </script>
   </body>

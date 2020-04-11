@@ -1,6 +1,13 @@
+@font-face {
+  font-family: belwe;
+  src: url(fonts/Belwe-Bold.ttf)
+}
+
+
 html, body {
             height: 100%;
-            margin: 0;
+            margin: 0px;
+            padding: 0px;
         }
 
 .body-class {
@@ -9,16 +16,109 @@ html, body {
 }
 
 h1 {
-  text-align: center;
+    font-family: belwe;
+    color: #527356;
+      text-shadow:
+         -1px -1px 0 #fff,
+          1px -1px 0 #fff,
+          -1px 1px 0 #fff,
+           1px 1px 0 #fff
 }
+
 
 .title_page {
   min-height: 100%;
   display: flex;
   justify-content: center;
+  /* margin-top: 50%; */
   align-items: center;
 }
 
+/*-------Chapmion--------*/
+
+.champion {
+  min-height: 25%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 88px;
+}
+
+.test-image {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+
+.champion h1 {
+  margin-bottom: 36px;
+}
+
+#belt_holder_logo {
+  margin-bottom: 36px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#current_holder {
+  font-family: Belwe;
+  font-size: 36px;
+  color: #527356;
+  text-shadow:
+       -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+         1px 1px 0 #fff
+
+}
+
+
+
+
+/*-------CONCEPT---------*/
+
+.concept {
+  min-height: 25%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+
+}
+
+.concept h1 {
+  margin-top: 88px;
+  margin-bottom: 36px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #527356,
+  1px -1px 0 #527356,
+  -1px 1px 0 #527356,
+  1px 1px 0 #527356
+}
+
+.description {
+  color: #696969;
+  max-width: 810px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  text-align: left !important;
+  align-items: left;
+}
+
+
+
+/*--------TABLE---------*/
 
 .game_data_style {
   min-height: 50%;
@@ -27,50 +127,84 @@ h1 {
   align-items: center;
   flex-direction: column;
   background-color: #fff !important;
-  padding: 0px;
-  margin: 0px;
+  margin-bottom: 48px;
 }
 
-.container .game_data_style {
-  background-color: #fff !important
-  margin: 0px !important;
-  padding: 0px !important;
+/* Section Header */
+.game_data_style h1 {
+  margin-top: 36px;
+  margin-bottom: 24px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #527356,
+  1px -1px 0 #527356,
+  -1px 1px 0 #527356,
+  1px 1px 0 #527356
 }
 
-.champion {
-  min-height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-#game_data table {
+table {
   width: 100%;
+  border: 0px;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 18px;
-  padding-top: 30px;
-  padding-right: 15px;
   margin: 0;
   color: black;
-  font-size: 80%;
+  font-size: 100%;
+  border-radius: 10px !important;
+  position: relative;
+  margin-bottom: 88px;
 }
 
-.game_data_style h1 {
-  color: #527356 !important;
+thead tr {
+  background-color: #527356;
+  /* padding-bottom: 10px; */
+  /* padding-top: 10px; */
 }
+
+thead tr th{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border:0px;
+  color: #fff;
+  font-weight: normal;
+  position: sticky;
+}
+
+thead tr th:nth-child(1){
+  padding-left: 10px;
+}
+
+tbody tr td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0px;
+  color: #696969;
+}
+
+tr{
+  text-align: left !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+tbody tr:hover {
+  background-color: #ececff;
+  /* cursor: pointer; */
+}
+
 
 tbody tr td:nth-child(1) {
-  width: 200px;
-  /* padding-left: 40px; */
+  width: 210px;
+  padding-left: 10px;
 }
 
 tbody tr td:nth-child(2) {
-  width: 160px;
+  width: 155px;
 }
 
 tbody tr td:nth-child(3) {
-  width: 160px;
+  width: 155px;
 }
 
 tbody tr td:nth-child(4) {
@@ -78,20 +212,53 @@ tbody tr td:nth-child(4) {
 }
 
 tbody tr td:nth-child(5) {
-  width: 130px;
-}
-
-table {
-  border: 0px;
-  border-color:#fff;
-  text-align: left;
-}
-
-th {
-  text-align: left !important;
+  width: 110px;
 }
 
 
+
+@media screen and (max-width: 810px) {
+  table {
+    border-left: 0px;
+    border-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  /* #current_holder h1 {
+    margin-bottom: 36px;
+  } */
+
+  #game_data table, p {
+    font-size: 85%
+  }
+
+  img {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+
+footer {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* font-family: belwe; */
+  color: #fff;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+footer ul {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+/* ARROW ANIMATION */
+/*-----------------------------*/
 .arrow{
     position: absolute;
     top: 75%;

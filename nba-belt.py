@@ -114,7 +114,17 @@ else:
     print("Created dataframe")
 
 def write_winner(df=None):
+
     belt_holder = df['Winner'][0]
+
+    soup = BeautifulSoup('',"html.parser")
+
+    src = 'logos/' + belt_holder + '.png'
+    img_tag = soup.new_tag('img', src=src)
+
+    with open("data/belt_holder_logo.html", "w") as file:
+        file.write(str(img_tag))
+
     if belt_holder == 'Atlanta':
         belt_holder = 'Atlanta Hawks'
     elif belt_holder == 'Boston':
@@ -181,6 +191,8 @@ def write_winner(df=None):
     holder_text=open("data/current_holder.txt","w")
     holder_text.write(belt_holder)
     holder_text.close()
+
+
     return(belt_holder)
 
 ## write html
