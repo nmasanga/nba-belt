@@ -26,21 +26,58 @@ h1 {
            1px 1px 0 #fff
 }
 
-
 .title_page {
   min-height: 100%;
   display: flex;
   justify-content: center;
-  /* margin-top: 50%; */
   align-items: center;
 }
+
+/* ARROW ANIMATION */
+/*-----------------------------*/
+.arrow{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+
 
 /*-------Chapmion--------*/
 
 .champion {
   min-height: 25%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   margin-top: 80px;
@@ -90,7 +127,6 @@ img {
 .concept {
   min-height: 25%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   background-color: #fff;
@@ -121,18 +157,18 @@ img {
 
 /*--------TABLE---------*/
 
-.game_data_style {
+.game_log {
   min-height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff !important;
+  background-color: #fff;
   margin-bottom: 48px;
 }
 
 /* Section Header */
-.game_data_style h1 {
+.game_log h1 {
   margin-top: 36px;
   margin-bottom: 24px;
   color: #fff;
@@ -149,12 +185,13 @@ table {
   border-right: 1px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  margin: 0;
   color: black;
   font-size: 100%;
   border-radius: 10px !important;
   margin-bottom: 88px;
 }
+
+
 
 thead tr {
   background-color: #527356;
@@ -193,12 +230,13 @@ tbody tr:hover {
 }
 
 
+
 tbody tr td:nth-child(1) {
   width: 210px;
   padding-left: 10px;
 }
 
-tbody tr td:nth-child(2) {
+tbody tr td:nth-child(2), thead tr th:nth-child(2) {
   width: 155px;
 }
 
@@ -213,8 +251,6 @@ tbody tr td:nth-child(4) {
 tbody tr td:nth-child(5) {
   width: 110px;
 }
-
-
 
 @media screen and (max-width: 810px) {
   table {
@@ -259,42 +295,4 @@ footer ul {
   color: #fff;
   padding: 0;
   margin: 0;
-}
-
-/* ARROW ANIMATION */
-/*-----------------------------*/
-.arrow{
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #fff;
-    border-right: 5px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
-}
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
 }
