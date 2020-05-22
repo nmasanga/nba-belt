@@ -14,7 +14,11 @@
   <body class="body-class">
 
     <div class="title_page">
-      <h1> nba championship belt</h1>
+      <h1 class='title'> nba championship belt</h1>
+      <div class='undertaker'>
+        <img src='/img/undertaker.png'>
+
+      </div>
       <div class="arrow">
                 <span></span>
                 <span></span>
@@ -24,9 +28,6 @@
 
     <div class="champion">
       <h1>current belt holder:</h1>
-      <!-- <div class="test-image">
-        <img src ="logos/utah.png"/>
-      </div> -->
       <div id="belt_holder_logo"></div>
       <div id="current_holder"></div>
     </div>
@@ -37,15 +38,15 @@
         <p>
           The reigning champion starts the regular season holding the belt (in this case: the Toronto Raptors,
           WHAT IT DO BABY). When the belt holder loses, they hand the belt to the team that beat them. When that team
-          loses they hand over the belt and the sequence continues.
+          loses they hand over the belt and so on and so forth.
           The team to hold it at the end of the regular season has the distinction of being
           the season's belt champion.
         </p>
         <p>
-          When a new NBA champion is crowned, they start the next season with the belt and the process is repeated.
+          This is similar to how the WWE or any fighting organization hands belts.
         </p>
         <p>
-          This is similar to how the WWE or any fighting organization hands belts.
+          When a new NBA champion is crowned, they start the next season with the belt and the process is repeated.
         </p>
         <p>
           Like many great ideas, this was stolen. Someone from the
@@ -62,7 +63,7 @@
       <div id="game_data"></div>
     </div>
 
-    <footer> created by:<a href='https://www.linkedin.com/in/norman-masanga' target="_blank"><ul>norman masanga</ul></a>
+    <footer> created by:<a href='http://www.norm.coffee' target="_blank"><ul>norman masanga</ul></a>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -73,7 +74,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script>
     $(window).scroll(function(){
-      if($(this).scrollTop() > 500){
+      if($(this).scrollTop() > 400){
         $('.arrow').css({'display': 'none'});
       }
       else {

@@ -33,11 +33,27 @@ h1 {
   align-items: center;
 }
 
+.undertaker{
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.undertaker img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 /* ARROW ANIMATION */
 /*-----------------------------*/
 .arrow{
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
