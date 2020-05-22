@@ -72,6 +72,16 @@
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script>
+    $(window).scroll(function(){
+      if($(this).scrollTop() > 500){
+        $('.arrow').css({'display': 'none'});
+      }
+      else {
+        $('.arrow').css({'display': 'block'});
+      }
+    });
+    </script>
+    <script>
     $(function(){
       $("#current_holder").load("data/current_holder.txt");
       $("#game_data").load("data/game_data.html");
