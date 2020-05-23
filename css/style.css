@@ -8,16 +8,26 @@ html, body {
             height: 100%;
             margin: 0px;
             padding: 0px;
+            color: #fff;
         }
 
-.body-class {
-  background-color: #527356;
-  color: #fff;
+/*-------header-----------*/
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 64px;
 }
+
+header img {
+  margin: 16px 0 0 16px;
+  height: 80%;
+}
+
 
 h1 {
     font-family: belwe;
-    color: #527356;
+    color: #9199AB;
     text-align: center;
       text-shadow:
          -1px -1px 0 #fff,
@@ -31,6 +41,11 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #9199AB;
+}
+
+.title_page h1 {
+  z-index: 4;
 }
 
 .undertaker{
@@ -40,7 +55,7 @@ h1 {
   top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
-  z-index: -1;
+  z-index: 3;
 }
 .undertaker img{
     display: block;
@@ -53,7 +68,7 @@ h1 {
 /*-----------------------------*/
 .arrow{
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -96,8 +111,9 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 80px;
-  margin-bottom: 88px;
+  padding-top: 80px;
+  padding-bottom: 88px;
+  background-color: #9199AB;
 }
 
 .test-image {
@@ -106,7 +122,7 @@ h1 {
   justify-content: center;
 }
 
-img {
+.current_holder img {
   width: 80%;
   height: 80%;
 }
@@ -126,7 +142,7 @@ img {
 #current_holder {
   font-family: Belwe;
   font-size: 36px;
-  color: #527356;
+  color: #9199AB;
   text-shadow:
        -1px -1px 0 #fff,
         1px -1px 0 #fff,
@@ -174,18 +190,13 @@ img {
 /*--------TABLE---------*/
 
 .game_log {
-  min-height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  position: relative;
   background-color: #fff;
   margin-bottom: 48px;
 }
 
 /* Section Header */
 .game_log h1 {
-  margin-top: 36px;
   margin-bottom: 24px;
   color: #fff;
   text-shadow: -1px -1px 0 #527356,
@@ -195,24 +206,21 @@ img {
 }
 
 
-table {
-  width: 100%;
-  border: 0px;
-  border-right: 1px solid #f2f2f2;
-  border-left: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  color: black;
-  font-size: 100%;
-  border-radius: 10px !important;
+.dataframe {
+  display: block;
+  overflow-y: scroll;
+  max-width: 768px;
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
   margin-bottom: 88px;
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
-
-
 
 thead tr {
   background-color: #527356;
-  /* padding-bottom: 10px; */
-  /* padding-top: 10px; */
+  text-align: left !important;
 }
 
 thead tr th{
@@ -223,8 +231,29 @@ thead tr th{
   font-weight: normal;
 }
 
-thead tr th:nth-child(1){
+
+thead tr th:nth-child(1), tbody tr td:nth-child(1) {
+  width: 210px;
   padding-left: 10px;
+}
+
+thead tr th:nth-child(2), thead tr th:nth-child(3), tbody tr td:nth-child(2), tbody tr td:nth-child(3)  {
+  width: 155px;
+}
+
+thead tr th:nth-child(4), tbody tr td:nth-child(4) {
+  width: 160px;
+}
+
+thead tr th:nth-child(5), tbody tr td:nth-child(5) {
+  width: 110px;
+}
+
+.dataframe tbody{
+  display:block;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
 }
 
 tbody tr td{
@@ -235,37 +264,13 @@ tbody tr td{
 }
 
 tr{
-  text-align: left !important;
+  /* text-align: left !important; */
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
 tbody tr:hover {
   background-color: #ececff;
-  /* cursor: pointer; */
-}
-
-
-
-tbody tr td:nth-child(1) {
-  width: 210px;
-  padding-left: 10px;
-}
-
-tbody tr td:nth-child(2), thead tr th:nth-child(2) {
-  width: 155px;
-}
-
-tbody tr td:nth-child(3) {
-  width: 155px;
-}
-
-tbody tr td:nth-child(4) {
-  width: 160px;
-}
-
-tbody tr td:nth-child(5) {
-  width: 110px;
 }
 
 @media screen and (max-width: 810px) {
@@ -289,9 +294,9 @@ tbody tr td:nth-child(5) {
     font-size: 85%;
   }
 
-  img {
-    width: 60%;
-    height: 60%;
+  .champion img {
+    width: 70%;
+    height: 70%;
   }
 }
 
@@ -301,14 +306,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* font-family: belwe; */
   color: #fff;
-  margin-bottom: 48px;
-  margin-top: 48px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  background-color: #9199AB;
 }
 
-footer ul {
-  color: #fff;
-  padding: 0;
-  margin: 0;
+footer a {
+  color: #FFFFFF;
 }
