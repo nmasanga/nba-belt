@@ -71,20 +71,46 @@
 
     <footer>
       <p>created by: <a href='http://www.norm.coffee' target="_blank">norman masanga</a></p>
-      <p>graphic by: <a href='https://www.sabrinapan.com/' target="_blank">sabrina pan</a></p>
+      <p>illustration by: <a href='https://www.sabrinapan.com/' target="_blank">sabrina pan</a></p>
 
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
+
     <script>
-    $(window).scroll(function(){
-      if($(this).scrollTop() > 400){
-        $('.arrow').css({'display': 'none'});
+    // var header = $(".game_log thead tr");
+    // $(".game_log thead tr").scroll(function() {
+    //   var scroll = $(this).scrollTop();
+    //   if (scroll >= 10) {
+    //     $(this).addClass("shadow");
+    //   } else {
+    //     $(this).removeClass("shadow");
+    //   }
+    // });
+
+    var header = $(".game_log thead tr");
+    $(this).scroll(function() {
+      var scroll = $(this).scrollTop();
+      if (scroll > 10) {
+        $(".game_log thead tr").addClass("box-shadow");
       }
       else {
-        $('.arrow').css({'display': 'block'});
+        $(".game_log thead tr").removeClass("box-shadow");
       }
     });
     </script>
+
+    <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll > 400) {
+        $(".arrow").addClass("hide");
+      }
+      else {
+        $(".arrow").removeClass("hide");
+      }
+    });
+    </script>
+
     <script>
     $(function(){
       $("#current_holder").load("data/current_holder.txt");

@@ -206,7 +206,6 @@ belt_holder = write_winner(df)
 print("Current championship belt holder: " + belt_holder)
 
 ## find team with the most title defenses
-## find team with the most title defenses
 winner_count = df.groupby('Winner').count()[['Final Score']] ## get count of each games won while holding belt
 winner_count = winner_count.sort_values('Final Score', axis=0, ascending=False, inplace=False, kind='quicksort', na_position='last') ## reorder by Winner Score
 winner_count = winner_count.reset_index(drop=False) ## remove index so Winner header can be called
